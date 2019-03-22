@@ -1,0 +1,1 @@
+$('.parallax-window').parallax({imageSrc: 'header-catedral_de_barcelona.JPG'});

@@ -1,0 +1,47 @@
+/* Container styling */
+
+.container-fluid{
+    padding: 0%;
+    margin: 0%;
+}
+
+/* Navbar styling */
+
+.navbar-brand{
+    font-family: 'Fjalla One';
+    font-size: 40px;
+}
+
+.nav-item{
+    font-family: 'Montserrat';
+    font-size: 18px;
+}
+
+.nav-item a {
+    color:#fff;
+    position:relative;
+}
+
+.nav-item a::after, .nav-item a::before{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%; /* do not transition width, height, padding or margin. use transform because it doesn't cause re-layout */
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transform: scaleX(0); /* only scale the width */
+    transition: .5s;
+    transform-origin: left center; /* first value is horizontal positioning and the second is vertical positioning */
+}
+
+.nav-item a::before{
+    transform-origin: right center;
+    bottom: auto; /* overriding the previous bottom */
+    top: 5px;
+}
+
+.nav-item a:hover::before, .nav-item a:hover::after{
+    transform: scaleX(1)
+}
