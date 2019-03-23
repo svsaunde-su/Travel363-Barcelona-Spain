@@ -1,11 +1,21 @@
 /* Container styling */
 
+.row{
+    padding: 0%;
+    margin: 0%;
+}
+
 .container-fluid{
     padding: 0%;
     margin: 0%;
 }
 
-/* Navbar styling */
+.card-deck{
+    padding: 0%;
+    margin: 0%;
+}
+
+/* Navbar*/
 
 .navbar-brand{
     font-family: 'Fjalla One';
@@ -17,6 +27,8 @@
     font-size: 18px;
 }
 
+        /* Navbar transition (1) */
+
 .nav-item a {
     color:#fff;
     position:relative;
@@ -26,22 +38,187 @@
     content: "";
     display: block;
     height: 1px;
-    width: 100%; /* do not transition width, height, padding or margin. use transform because it doesn't cause re-layout */
+    width: 100%; 
     background-color: #fff;
     position: absolute;
     left: 0;
     bottom: 5px;
-    transform: scaleX(0); /* only scale the width */
+    transform: scaleX(0); 
     transition: .5s;
-    transform-origin: left center; /* first value is horizontal positioning and the second is vertical positioning */
+    transform-origin: left center; 
 }
 
 .nav-item a::before{
     transform-origin: right center;
-    bottom: auto; /* overriding the previous bottom */
+    bottom: auto; 
     top: 5px;
 }
 
 .nav-item a:hover::before, .nav-item a:hover::after{
     transform: scaleX(1)
+}
+
+/* Header */
+
+.header-img{
+    background-image: url('header-catedral_de_barcelona.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: -10;
+}
+
+.overlay{
+    position: absolute;
+    background-color: rgba(0,0,0,0.3);
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -5;
+}
+
+.tagline{
+    font-family: 'Fjalla One';
+    font-size: 40px;
+    margin-top: 20%;
+    text-align: center;
+}
+
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* About */
+
+.about{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #0B3954;
+}
+
+.about-img{
+    background-image: url('about-barcelona_sunset.JPG');
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+.about-title{
+    color: #fff;
+    font-family: 'Fjalla One';
+    font-size: 30px; 
+    margin-top: 70px;
+}
+
+.about-text{
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 16px; 
+    line-height: 25px;
+    margin-top: 30px;
+}
+
+.parallax2{
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+/* Sites */
+
+.sites-title{
+    color: #000;
+    font-family: 'Fjalla One';
+    font-size: 30px; 
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.card-img-top1{
+    height: 250px;
+    width: auto;
+}
+
+.card{
+    border: none;
+}
+
+.card-title{
+    font-family: 'Average';
+    font-size: 25px;
+}
+
+.card-text1{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    height: 200px;
+}
+
+.btn{
+    background-color: #BFD7EA;
+    color: #000;
+    border: none;
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+
+.btn:hover{
+    background-color: #FF5A5F;
+}
+
+
+/* More */
+
+.border-bottom{
+    background-color: #fff !important;
+}
+
+.pb-5{
+    padding-bottom: 0px !important;
+}
+
+.more-title{
+    color: #000;
+    font-family: 'Fjalla One';
+    font-size: 30px; 
+    margin-bottom: 20px;
+}
+
+.more-text{
+    font-family: 'Average';
+    font-size: 25px;
+}
+
+.day-trips-title{
+    color: #087E8B;
+    font-family: 'Fjalla One';
+    font-size: 30px;
+    margin: 30px;
+    text-align: center;
+}
+
+.card-img-top2{
+    height: 400px;
+    width: auto; 
+}
+
+.nightlife-title{
+    color: #FF5A5F;
+    font-family: 'Fjalla One';
+    font-size: 30px;
+    margin: 30px;
+    text-align: center;
+}
+
+.card-body3{
+    background-color: #087E8B;
+    color: #fff;
+    margin: 15px;
 }
