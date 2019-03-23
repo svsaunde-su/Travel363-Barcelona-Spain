@@ -241,7 +241,12 @@
 .card-body4{
     align-content: center;
     justify-content: center;
+}
 
+/* Gallery */
+
+.gallery{
+    background-color: #BFD7EA;
 }
 
 
