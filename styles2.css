@@ -196,6 +196,8 @@
     font-size: 25px;
 }
 
+        /* Day Trips */
+
 .day-trips-title{
     color: #087E8B;
     font-family: 'Fjalla One';
@@ -209,6 +211,8 @@
     width: auto; 
 }
 
+        /* Nightlife */
+
 .nightlife-title{
     color: #FF5A5F;
     font-family: 'Fjalla One';
@@ -220,5 +224,25 @@
 .card-body3{
     background-color: #087E8B;
     color: #fff;
-    margin: 15px;
+    margin: 0px 15px;
 }
+
+
+/* Recommendation */
+
+.recommendation-title{
+    color: #000;
+    font-family: 'Fjalla One';
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-body4{
+    align-content: center;
+    justify-content: center;
+
+}
+
+
+
