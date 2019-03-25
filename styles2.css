@@ -15,6 +15,10 @@
     margin: 0%;
 }
 
+.card{
+    display: flex;
+}
+
 /* Navbar*/
 
 .navbar-brand{
@@ -95,70 +99,20 @@
     background-size: cover;
 }
 
-@keyframes jackInTheBox {
-    from {
-      opacity: 0;
-      -webkit-transform: scale(0.1) rotate(30deg);
-      transform: scale(0.1) rotate(30deg);
-      -webkit-transform-origin: center bottom;
-      transform-origin: center bottom;
-    }
-  
-    50% {
-      -webkit-transform: rotate(-10deg);
-      transform: rotate(-10deg);
-    }
-  
-    70% {
-      -webkit-transform: rotate(3deg);
-      transform: rotate(3deg);
-    }
-  
-    to {
-      opacity: 1;
-      -webkit-transform: scale(1);
-      transform: scale(1);
-    }
-  }
-  
-  .jackInTheBox {
-    -webkit-animation-name: jackInTheBox;
-    animation-name: jackInTheBox;
-  }
-
 /* About */
 
-#about{
-    margin-top: 50px;
+.about-card{
     width: 100%;
     background-color: #0B3954;
 }
 
-.about-img{
-    background-image: url('about-barcelona_sunset.JPG');
-    background-size: cover;
-    width: 100%;
-    height: 400px;
+.card-img-about{
+    border-radius: 0;
+    height: 100%;
 }
 
-.about-title{
-    color: #fff;
-    font-family: 'Fjalla One';
-    font-size: 30px; 
-    margin-top: 70px;
-}
-
-.about-text{
-    color: #fff;
-    font-family: 'Montserrat';
-    font-size: 16px; 
-    line-height: 25px;
-    margin-top: 30px;
-}
-
-.parallax2{
-    background-attachment: fixed;
-    background-size: contain;
+.card-img-about:hover{
+    border-radius: 50%;
 }
 
 /* Sites */
@@ -172,8 +126,11 @@
     text-align: center;
 }
 
+.card-deck{
+    flex-wrap: wrap;
+}
 .card-img-top1{
-    height: 250px;
+    height: 200px;
     width: auto;
 }
 
@@ -186,10 +143,14 @@
     font-size: 25px;
 }
 
+.card-title-sites{
+    display: flex;
+}
+
 .card-text1{
     font-family: 'Montserrat';
     font-size: 16px;
-    height: 200px;
+    display: flex;
 }
 
 .btn{
@@ -352,8 +313,9 @@
 }
 
 .card-body4{
-    align-content: center;
+    align-items: center;
     justify-content: center;
+
 }
 
 @keyframes shake {
@@ -419,6 +381,25 @@
     font-size: 16px;
 }
 
-
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
 
 
